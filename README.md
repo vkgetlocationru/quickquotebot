@@ -1,1 +1,1 @@
-# quickquotebot
+# quickquote
