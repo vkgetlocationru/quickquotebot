@@ -1,0 +1,21 @@
+{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.0",
+    "body": [
+        {
+            "type": "TextBlock",
+            "id": "5bd77a17-3a15-1ff6-712b-fbdf1b36136d",
+            "text": "",
+            "wrap": true
+        },
+        {
+            "type": "TextBlock",
+            "id": "9de6f509-f3ff-2843-abe8-dace3a519ee9",
+            "text": "",
+            "wrap": true,
+            "spacing": "None"
+        }
+    ],
+    "padding": "None"
+}
