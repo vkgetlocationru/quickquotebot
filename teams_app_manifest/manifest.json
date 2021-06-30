@@ -1,0 +1,43 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.5/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.5",
+  "version": "1.0",
+  "id": "ac077954-0a57-47e2-afa1-788cd5e5fd29",
+  "packageName": "com.getlocation.teams.quickquote",
+  "developer": {
+    "name": "sooslick",
+    "websiteUrl": "https://dev.botframework.com",
+    "privacyUrl": "https://privacy.microsoft.com",
+    "termsOfUseUrl": "https://www.microsoft.com/en-us/legal/intellectualproperty/copyright/default.aspx"
+  },
+  "name": {
+    "short": "QuickQuote",
+    "full": "Приложение для цитирования сообщений"
+  },
+  "description": {
+    "short": "Цитируйте сообщения собеседника для ускорения коммуникаций",
+    "full": "Полное описание"
+  },
+  "icons": {
+    "outline": "icon-outline.png",
+    "color": "icon-color.png"
+  },
+  "accentColor": "#FFFFFF",
+  "composeExtensions": [
+    {
+      "botId": "ac077954-0a57-47e2-afa1-788cd5e5fd29",
+      "commands": [
+        {
+          "id": "QuickQuote",
+          "type": "action",
+          "context": [ "message" ],
+          "description": "Цитировать соощение",
+          "title": "Цитировать"
+        }
+      ]
+    }
+  ],
+  "permissions": [
+    "identity"
+  ]
+}
