@@ -87,7 +87,7 @@ async def index(req: Request) -> Response:
     return Response(status=HTTPStatus.OK, body="OK")
 
 APP = web.Application(middlewares=[aiohttp_error_middleware])
-# APP.router.add_post("/api/messages", messages)
+APP.router.add_post("/api/messages", messages)
 APP.router.add_get("/", index)
 if __name__ == "__main__":
     try:
