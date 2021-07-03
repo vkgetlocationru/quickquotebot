@@ -81,9 +81,14 @@ async def messages(req: Request) -> Response:
     return Response(status=HTTPStatus.OK)
 
 
+async def index(req: Request) -> Response:
+    # Main bot message handler.
+    
+    return "Hello"
+
 APP = web.Application(middlewares=[aiohttp_error_middleware])
 APP.router.add_post("/api/messages", messages)
-
+APP.router.add_post("/", index)
 if __name__ == "__main__":
     try:
         web.run_app(APP, port=CONFIG.PORT)
