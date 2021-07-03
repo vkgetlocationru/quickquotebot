@@ -88,7 +88,7 @@ async def index(req: Request) -> Response:
 
 APP = web.Application(middlewares=[aiohttp_error_middleware])
 APP.router.add_post("/api/messages", messages)
-APP.router.add_post("/", index)
+APP.router.add_get("/", index)
 if __name__ == "__main__":
     try:
         web.run_app(APP, port=CONFIG.PORT)
