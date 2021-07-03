@@ -8,14 +8,8 @@ from http import HTTPStatus
 
 from aiohttp import web
 from aiohttp.web import Request, Response, json_response
-from botbuilder.core import (
-    BotFrameworkAdapterSettings,
-    TurnContext,
-    BotFrameworkAdapter,
-)
+
 from botbuilder.core.integration import aiohttp_error_middleware
-from botbuilder.schema import Activity, ActivityTypes
-from bots import TeamsMessagingExtensionsActionBot
 from config import DefaultConfig
 
 CONFIG = DefaultConfig()
